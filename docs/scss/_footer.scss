@@ -1,0 +1,201 @@
+.footer{
+    
+    &__top{
+        background-color: #DFDFDF;
+        padding: 60px 0;
+
+        &-inner{
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+    }
+
+    &__form{
+
+        width: 48.738739%; /* 541/1110 */
+
+        &-title{
+            font-weight: 700;
+            font-family: $mon;
+            font-size: 16px;
+            color: $black;
+
+            margin-bottom: 14px;
+        }
+
+        &-text{
+            color: $gray;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 168.75%; /* 27/16 */
+
+            margin-bottom: 16px;
+
+            max-width: 476px;
+        }
+
+        &-email{
+            font-size: 14px;
+            font-weight: 600;
+            color: $black;
+
+            margin-bottom: 23px;
+
+            &::before{
+                content: url(../images/content/footer/message.svg);
+                display: inline-block;
+                margin-right: 14px;
+            }
+        }
+
+        &-inner{
+            display: flex;
+            justify-content: space-between;
+            gap: 0 10px;
+        }
+
+        &-input{
+            display: block;
+            width: 368px;
+            height: 40px;
+            border-radius: 21px;
+            border: 1px solid #383636;
+            padding: 6px 20px;
+
+            background-color: transparent;
+
+            font-size: 16px;
+            font-weight: 400;
+            color: $gray;
+            line-height: 175%; /* 28/16 */
+            color: #A1A1A1;
+
+            &::placeholder{
+                font-size: 16px;
+                font-weight: 400;
+                color: $gray;
+                line-height: 175%; /* 28/16 */
+                color: #A1A1A1;
+            }
+        }
+
+        &-btn{
+            display: inline-block;
+            font-size: 16px;
+            font-weight: 400;
+            background-color: $black;
+            color: #FFFFF0;
+            padding: 6px 12px;
+            line-height: 175%; /* 28px/16 */;
+
+            min-width: 160px;
+            text-align: center;
+            border-radius: 21px;
+        }
+    }
+
+    &__social{
+        display: flex;
+        flex-direction: column;
+        width: 16.666667%; /* 185/1110 */
+
+        &-link{
+            display: inline-block;
+            color: $gray;
+            font-weight: 600;
+            font-size: 14px;
+            margin-bottom: 15px;
+
+            line-height: 200%; /* 28px/14 */
+
+            &::before{
+                content: url(../images/content/footer/social-1.svg);
+                display: inline-block;
+                margin-right: 12px;
+            }
+        }
+    }
+
+    &__copy{
+       width: 16.666667%; /* 185/1110 */
+
+        display: flex;
+        flex-direction: column;
+
+        &-link{
+            display: inline-block;
+            color: $gray;
+            font-weight: 600;
+            font-size: 14px;
+            margin-bottom: 15px;
+
+            line-height: 200%; /* 28px/14 */
+        }
+    }
+
+    &__bottom{
+        background-color: $black;
+        padding: 42px 0;
+    }
+
+    &__text{
+        color: #A1A1A1;
+        font-size: 14px;
+        font-weight: 600;
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer__social{
+        width: 50%;
+    }
+
+    .footer__copy{
+        width: 50%;
+    }
+
+    .footer__form{
+        width: 100%;
+        margin-bottom: 40px;
+    }
+
+    .footer__form-inner{
+        flex-direction: column;
+    }
+
+    .footer__form-input{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .footer__social{
+        width: auto;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .footer__copy{
+        width: auto;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (max-width: 520px) {
+    .footer__social{
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+  
+        margin-bottom: 40px;
+    }
+
+    .footer__copy{
+        width: 50%;
+        text-align: center;
+        text-align: left;
+
+    }
+}

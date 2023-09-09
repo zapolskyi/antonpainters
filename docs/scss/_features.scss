@@ -1,0 +1,124 @@
+.features {
+    padding: 80px 0;
+
+    &__inner {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__img {
+        display: block;
+        max-width: 100%;
+    }
+
+    &__title {
+        font-weight: 600;
+        color: #2f3034;
+        font-size: 30px;
+        margin-bottom: 15px;
+    }
+
+    &__content {
+        margin-left: 80px;
+    }
+
+    &__text {
+        color: #8c8c8c;
+        font-size: 16px;
+        font-weight: 300;
+        margin-bottom: 40px;
+    }
+
+    &__list {
+        margin-left: 50px !important;
+
+        &-item {
+            color: #8c8c8c;
+            font-size: 16px;
+            font-weight: 300;
+            margin-bottom: 10px;
+            padding-left: 50px;
+            position: relative;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+
+            &::before {
+                content: url(../images/content/features/ok.svg);
+                display: inline-block;
+                position: absolute;
+                top: 0;
+                left: 0;
+
+                width: 25px;
+                height: 25px;
+            }
+        }
+    }
+}
+
+.services__item:last-child{
+    margin-bottom: 0;
+}
+
+@media (max-width: 1200px) {
+    .features__list {
+        margin-left: 0 !important;
+    }
+}
+
+@media (max-width: 991px) {
+    .features__content {
+        margin-left: 30px;
+    }
+
+    .features__title {
+        font-size: 26px;
+    }
+
+    .features__text {
+        font-size: 14px;
+    }
+
+    .features__list-item {
+        font-size: 14px;
+        padding-left: 40px;
+    }
+}
+
+@media (max-width: 991px) {
+
+    .features {
+        padding-bottom: 40px;
+    }
+
+    .features__content {
+        margin-left: 15px;
+    }
+
+    .features__img {
+        width: 320px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .features__img {
+        width: 250px;
+    }
+
+    .features{
+        padding: 60px 0;
+    }
+
+}
+
+@media (max-width: 620px) {
+
+    .features__img {
+        display: none;
+    }
+
+}

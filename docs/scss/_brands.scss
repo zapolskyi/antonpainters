@@ -1,0 +1,31 @@
+.brands__inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.brands-title{
+    text-align: center;
+    font-size: 43px;
+
+    margin-bottom: 25px;
+}
+
+.brands__item {
+    padding: 0 15px;
+}
+
+.brands__icon{
+    display: block;
+    max-width: 100%;
+}
+
+@media (max-width: 768px) {
+    .brands-title{
+        font-size: 21px;
+    }
+
+    .brands__icon{
+        width: 70px;
+    }
+}

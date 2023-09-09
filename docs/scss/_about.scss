@@ -1,0 +1,23 @@
+.about{
+    background: url(../images/content/about/about.jpg) no-repeat center;
+    background-size: cover;
+    min-height: 399px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
+    &__title{
+        font-weight: 700;
+        font-size: 60px;
+        font-family: $mon;
+        color: $black;
+    }
+}
+
+@media (max-width: 620px) {
+    .about__title{
+        font-size: 40px;
+    }
+}
