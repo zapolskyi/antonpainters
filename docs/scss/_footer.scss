@@ -108,12 +108,8 @@
             margin-bottom: 15px;
 
             line-height: 200%; /* 28px/14 */
-
-            &::before{
-                content: url(../images/content/footer/social-1.svg);
-                display: inline-block;
-                margin-right: 12px;
-            }
+            position: relative;
+            padding-left: 20px;
         }
     }
 
@@ -146,6 +142,52 @@
         text-align: center;
     }
 }
+
+.insta{
+    &::before{
+        content: url(../images/content/footer/social-2.svg);
+        position: absolute;
+        top: 3px;
+        left: 0;
+    }
+}
+
+.pinterst{
+    &::before{
+        content: url(../images/content/footer/social-3.svg);
+        position: absolute;
+        top: 3px;
+        left: 0;
+    }
+}
+
+.youtube{
+    &::before{
+        content: url(../images/content/footer/youtube-168-svgrepo-com.svg);
+        position: absolute;
+        top: 3px;
+        left: 0;
+    }
+}
+
+.whats{
+    &::before{
+        content: url(../images/content/footer/whatsapp-svgrepo-com.svg);
+        position: absolute;
+        top: 3px;
+        left: 0;
+    }
+}
+
+.facebook{
+    &::before{
+        content: url(../images/content/footer/social-1.svg);
+        position: absolute;
+        top: 3px;
+        left: 0;
+    }
+}
+
 
 @media (max-width: 768px) {
     .footer__social{

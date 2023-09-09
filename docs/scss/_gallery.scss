@@ -55,6 +55,12 @@
     }
 }
 
+.mixitup-control-active {
+    color: $black;
+    background-color: rgba(255, 239, 53, .5);
+    border: none;
+}
+
 @media (max-width: 1200px) {
     .gallery__tab-link {
         font-size: 13px;
